@@ -1,7 +1,9 @@
+import styles from './App.module.scss';
+
 function App() {
   return (
     <>
-      <h1 className=" font-bold underline border-black">Hello world!</h1>
+      <h1 className={styles.body}>Hello world!</h1>
     </>
   );
 }
