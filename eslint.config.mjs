@@ -10,7 +10,7 @@ const compat = new FlatCompat();
 
 export default tseslint.config(
   eslintConfigPrettier,
-  ...compat.extends('plugin:import/recommended'),
+  ...compat.extends('plugin:import/recommended', 'plugin:storybook/recommended'),
   { ignores: ['dist', 'eslint.config.mjs'] },
   {
     extends: [js.configs.recommended, ...tseslint.configs.recommended],
